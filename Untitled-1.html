@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <title>Document</title>
+<head>
+<body>
+<h1>Questionnaire de mobilite urbaine</h1>
+<form name="Questionnaire" action="https://html.repnse.username.fr/repnse.php"></form>
+<fieldset>
+
+    <legend><strong>Informatiom personnelles</strong></legend>
+    <p>
+        <label for="genre">Genre:</label>
+        <input type="radio" name="genre" id="Genre" value="male"/>M<input>
+        <input type="radio" name="Genre" id="genre" value="fr"/>F<input>
+    </p>
+    <p>
+        <label for="Classe d'age">Classe d'age:</label>
+        <select name="age" id="age">
+        <option value="m20">moins de 20 ans</option>
+        <option value="2039">de 20 a 39 ans</option>
+        <option value="4059">de 40 a 59 ans</option>
+        <option value="2039">60 ans ou plus</option>
+        </select>
+        
+    </p>
+    <p>
+        <label for="socio">Groupe socioprofessionnel:</label>
+        <select name="socio" id="socio">
+        <option value="arti">Artisans,commerçant et chefs d'entreprise</option>
+        <option value="agri">Agriculteurs exploitants</option>
+        <option value="cadr">Cadres et proffessions intellectuelles supérieures</option>
+        <option value="proi">Proffessions intermedieres</option>
+        <option value="empl">Employés</option>
+        <option value="ouvr">Ouvriers</option>
+        <option value="retr">retraités</option>        
+        <option value="sansac">Autres personnes sans activités proffesionnelles</option>
+    
+    </select>
+    </p>
+    <p>
+        <label>Code postal</label> <input type="text" name="code" maxlength="5">
+    </p>
+    </fieldset>
+<fieldset>
+    <legend><strong>Informatiom sur les trajets domiciles-travail</strong></legend>
+    <p>
+        <label for="vehicule">véhicule principale pour trajes domicile:</label>
+        <select name="vehicule principale" id="vehicule principale">
+        <option value="piétons">Aucun</option>
+        <option value="vélo">Bicyclettes</option>
+        <option value="deuxroues">Deux roues motorisés</option>
+        <option value="auto">Automobiles</option>
+        <option value="tcommun">Transports en commun </option>
+        </select>
+    </p>
+    <label for="distance">Distance domicile:</label>
+    <select name="distance" id="distance">
+        <option value="m1">inféieure a 1 klm</option>
+        <option value="15">de 1 a 5klm</option>
+        <option value="515">de 5 a 15 klm</option>
+        <option value="p15">plus que 15klm</option>
+    </select>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Axes d'amélioration des Transports communs</strong></legend>
+        <p>
+            <p>Cocher les principaux obstacles a la mobilité en transports en communs</p>
+            <input type="radio" name="tem" id="tem" value="temps de trajets trop long">temps de trajets trop long
+            <input type="radio" name="tem" id="tem" value="Correspendances inadaptés">Correspendances inadaptés
+            <input type="radio" name="tem" id="tem" value="Tarifs trop élevé">Tarifs trop élevé
+            <input type="radio" name="tem" id="tem" value="Respect des horaires">Respect des horaire
+            <input type="radio" name="tem" id="tem" value="trop fortes affuence">trop fortes affuence
+            <input type="radio" name="tem" id="tem" value="Desrtes insuffisantes">Desrtes insuffisantes
+            <input type="radio" name="tem" id="tem" value="Amplitudes horaires trop limité">Amplitudes horaires trop limité
+            <input type="radio" name="tem" id="tem" value="Confort insuffisant">Confort insuffisantes
+        </input>
+    <p>Remarques ou observations sur le réseau de Transorts en communs</p>
+    <textarea id="Remarques" name="Remarques" rows="10" cols="70"></textarea>
+        </p>
+    </fieldset> 
+    <fieldset>
+        <legend><strong>Merci pour votre paricipations</strong></legend>
+    <input type="submit" value="soumettre">
+    </fieldset>
+
+</body>
+</head>
